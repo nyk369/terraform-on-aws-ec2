@@ -1,8 +1,6 @@
 #Get Amazon Latest AMI ID for Amazon Linux OS
 data "aws_ami" "amz_linux" {
   most_recent      = true
-  owners           = ["Amazon"]
-
   filter {
     name   = "name"
     values = ["al2023-ami-hvm-*-gp2"]
