@@ -2,10 +2,7 @@ data "aws_ami" "amzlinux" {
   most_recent = true
   owners = ["amazon"]  # or the specific AWS account ID if it's a custom AMI
 
-  filter {
-    name   = "name"
-    values = ["amzn2-ami-hvm-*-x86_64-ebs"]  # Adjust the pattern to match the desired AMI
-  }
+   # Adjust the pattern to match the desired AMI}
   filter {
     name = "name"
     values = [ "aal2023-ami-hvm-*-gp2" ]
