@@ -5,7 +5,7 @@ data "aws_ami" "aal2023" {
    # Adjust the pattern to match the desired AMI}
   filter {
     name = "name"
-    values = [ "aal2023-ami-hvm-*-gp2" ]
+    values = [ "al2023-ami-2023.4.20240429.0-kernel-6.1-x86_64" ]
   }
   filter {
     name = "root-device-type"
