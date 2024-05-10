@@ -1,4 +1,4 @@
-data "aws_ami" "amzlinux" {
+data "aws_ami" "aal2023" {
   most_recent = true
   owners = ["amazon"]  # or the specific AWS account ID if it's a custom AMI
 
