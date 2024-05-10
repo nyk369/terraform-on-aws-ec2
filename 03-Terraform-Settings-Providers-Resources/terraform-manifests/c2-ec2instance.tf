@@ -7,3 +7,5 @@ resource "aws_instance" "test_ec2VM" {
     "Name" = "EC2 demo"
   }
  }
+
+ 

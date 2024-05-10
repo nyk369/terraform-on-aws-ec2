@@ -1,13 +1,14 @@
-# Terraform Output Values
+# Terraform output values
 
-# EC2 Instance Public IP
-output "instance_publicip" {
-  description = "EC2 Instance Public IP"
-  value = aws_instance.myec2vm.public_ip
+#EC2 instance public Ip
+output "instance_publicip"{
+  description = "EC2 Instance Public Ip"
+  value = "aws_instance.test_ec2VM.public_ip"
 }
 
-# EC2 Instance Public DNS
-output "instance_publicdns" {
+#EC2 Instance Public DNS
+
+output "instance_publicdns"{
   description = "EC2 Instance Public DNS"
-  value = aws_instance.myec2vm.public_dns
+  value = "aws_instance.test_ec2VM.public_dns"
 }
