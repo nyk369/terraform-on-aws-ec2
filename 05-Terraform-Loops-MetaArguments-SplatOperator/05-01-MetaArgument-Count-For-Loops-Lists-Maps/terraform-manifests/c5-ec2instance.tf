@@ -6,7 +6,7 @@ resource "aws_instance" "test_ec2VM" {
   #instance_type = var.instance_type_map["prod"]  # For Map
   user_data = file("${path.module}/app1-install.sh")
   key_name = var.instance_keypair
-  vpc_security_group_ids = [ aws_security_group.vpc-ssh2.id, aws_security_group.vpc-web2   ]
+  vpc_security_group_ids = [ aws_security_group.vpc-ssh2.id, aws_security_group.vpc-web2.id ]
   count = 2
   tags = {
     "Name" = "Count-Demo-${count.index}"
