@@ -6,10 +6,11 @@ data "aws_availability_zones" "my_azones" {
   }
 }
 
+#data.aws_availability_zones.my_azones.names
 
 # EC2 Instance
-resource "aws_instance" "myec2vm" {
-  ami = data.aws_ami.amzlinux2.id
+resource "aws_instance" "test_ec2VM" {
+  ami = data.aws_ami.al2023.id
   instance_type = var.instance_type
   user_data = file("${path.module}/app1-install.sh")
   key_name = var.instance_keypair
