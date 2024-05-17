@@ -8,7 +8,7 @@ module "ec2_private" {
   name = "${var.environment}-vm"
   ami = data.aws_ami.aal2023.id
   instance_type = var.instance_type
-  user_data = file("${path.module}/apache-install.sh")
+  user_data = file("${path.module}/app1-install.sh")
   key_name = var.instance_keypair
   #subnet_id= [module.vpc.private_subnets[0],module.vpc.private_subnets[1]
   tags = local.common_tags
