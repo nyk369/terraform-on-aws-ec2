@@ -7,7 +7,7 @@ module "ec2_private_app2" {
   version = "5.6.0"  
   # insert the 10 required variables here
   name                   = "${var.environment}-app2"
-  ami                    = data.aws_ami.amzlinux2.id
+  ami                    = data.aws_ami.aal2023.id
   instance_type          = var.instance_type
   key_name               = var.instance_keypair
   #monitoring             = true
