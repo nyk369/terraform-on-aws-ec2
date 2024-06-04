@@ -2,7 +2,7 @@
 resource "aws_launch_template" "my_launch_template" {
   name = "my-launch-template"
   description = "My Launch Template"
-  image_id = data.aws_ami.amzlinux2.id
+  image_id = data.aws_ami.aal2023.id
   instance_type = var.instance_type
 
   vpc_security_group_ids = [module.private_sg.security_group_id]
