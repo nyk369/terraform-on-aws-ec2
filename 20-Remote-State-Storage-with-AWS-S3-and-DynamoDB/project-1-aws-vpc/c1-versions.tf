@@ -9,9 +9,9 @@ terraform {
   }
   # Adding Backend as S3 for Remote State Storage
   backend "s3" {
-    bucket = "terraform-on-aws-for-ec2"
+    bucket = "my-terraform-on-aws-for-ec2"
     key    = "dev/project1-vpc/terraform.tfstate"
-    region = "us-east-1" 
+    region = "ap-south-1" 
 
     # Enable during Step-09     
     # For State Locking
